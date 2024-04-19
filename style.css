@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+  width: 100%; 
+  font-family:  "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+
+
+nav{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4vh 4vw 2vh 4vw;
+}
+
+
+.links {
+
+}
+
+.nav-button {
+  font-size:24px;
+  color:black;
+  text-decoration: none;
+  margin: 0vh 2vw 0vh 2vw;
+}
+
+.hero {
+  width: 100%; 
+  overflow: hidden; 
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height:72px;
+  margin:16vh 0vh 16vh 8vw;
+  width:80%;
+}
+
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 8vw;
+  grid-row-gap:8vh;
+  margin: 8vh 8vw 8vh 8vw
+}
+
+
+.subhead{
+  color:#F39360;
+  font-weight:700;
+  font-size:24px;
+  line-height: 36px;
+  margin-bottom:24px;
+}
+
+.text{
+  color:rgba(75, 75, 75, 0.8);
+  font-weight:400;
+  font-size:18px;
+  line-height: 30px;
+  margin-bottom:36px;
+
+}
+
+
+.button {
+  color:#F39360;
+  font-weight:500;
+  font-size:15px;
+  line-height: 18.29px;
+  padding:15px;
+  border-radius: 10px;
+  border: solid #4B4B4B 1px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #4B4B4B;
+  border: solid #F58F56 1px;
+}
+
+.section {
+  display:flex;
+  justify-content: space-evenly;
+  margin:10vh;
+}
+
+.placeholder {
+  width: 50%;
+}
+
+.placeholder:nth-child(even) {
+  width:50%;
+}
+
+.image-description {
+  width:40%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.section:nth-child(even) {
+  background-color: #f0f0f0;
+  width: 100%;
+  margin:0;
+  justify-content: space-between;
+  padding-left:2vw;
+}
+
+
+.company-section {
+  padding: 10vh 8vw 10vh 8vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.company-title {
+  color:#000000;
+  font-size:48px;
+  line-height: 72px;
+  margin-bottom:30px
+}
+
+.description{
+  color:#000000;
+  font-weight:200;
+  font-size:36px;
+  line-height: 50px;
+  margin-bottom:80px;
+}
+
+.logo-grid{
+  display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 4vw;
+grid-row-gap: 4vh;
+}
+
+.company-logo {
+  width:173px;
+  height:76px;
+}
+
+
+
+
