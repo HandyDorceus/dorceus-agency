@@ -1,0 +1,20 @@
+{
+  "name": "dorceus-agency",
+  "version": "1.0.0",
+  "description": "Your one-stop destination for expert life insurance, estate planning, and financial guidance. Explore our services and secure your financial future with confidence.",
+  "main": "script.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "nodemon": "^3.1.0"
+  }
+}
