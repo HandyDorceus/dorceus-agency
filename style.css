@@ -62,7 +62,6 @@ nav{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center;  */
   background-image: url("/assets/hero.png");
   background-size: cover;
 }
@@ -83,8 +82,16 @@ nav{
   z-index: 2;
 }
 
-main {
-  /* margin:0px 160px 0px 160px; */
+.main {
+  height:80vh;
+  background-color: #F5F5F5;
+  
+ 
+}
+
+.main-content{
+  padding:10vh 10vw 10vh 10vw;
+
 }
 
 .title {
@@ -107,7 +114,7 @@ main {
   color:#F39360;
   font-weight:700;
   font-size:48px;
-  line-height: 36px;
+  line-height: 50px;
   margin-bottom:64px;
 }
 
@@ -356,6 +363,42 @@ margin-bottom:14px;
 
 }
 
+.row{
+  display:flex;
+  margin-bottom:5vh;
+  align-items: start;
+}
 
+.contact{
+  font-weight:bold;
+  font-size:26px;
+  width:100px;
+}
 
+.line{
+  height: 3.5vh; 
+  width: 2px;
+  background-color: #000;
+  margin: 0 40px;
+}
+
+.info{
+  font-weight:400;
+  font-size:26px;
+  line-height: 56px;
+}
+
+.mission-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  margin: 0vh 30vw 0vh 8vw;
+}
+
+.mission-header{
+  font-weight:bold;
+  font-size:26px;
+  margin-bottom:4vh;
+}
 
