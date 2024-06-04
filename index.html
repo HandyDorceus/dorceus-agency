@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dorceus Agency</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- <script src=""></script> -->
   </head>
   <body>
     <nav>
@@ -19,7 +20,7 @@
         <a href="/pages/about.html" class="nav-button">About</a>
         <a href="/pages/contact.html" class="nav-button">Contact</a>
       </div>
-      <div class="pancake-menu">
+      <div class="pancake-menu" id="mobileNav">
         <div class="menu">
           <div class="nav-line"></div>
           <div class="nav-line"></div>
@@ -27,6 +28,17 @@
         </div>
       </div>
     </nav>
+
+    <div class="sliding-nav" id="slidingNav">
+      <button class="close-btn" id="closeNavButton">&times;</button>
+      <div class="mobile-nav-buttons">
+        <a href="/index.html" class="mobile-nav-button">Home</a>
+        <a href="/pages/about.html" class="mobile-nav-button">About</a>
+        <a href="/pages/contact.html" class="mobile-nav-button">Contact</a>
+      </div>
+     
+    </div>
+
 
     <div class="hero">
       <div class="hero-content">
@@ -178,5 +190,17 @@
         </div>
       </div>
     </footer>
+    <script>
+      navButton = document.getElementById('mobileNav');
+      console.log(navButton)
+      navButton.addEventListener('click', function(){
+    console.log("Nav Button Clicked")
+    document.getElementById('slidingNav').classList.add('open');
+})
+
+document.getElementById('closeNavButton').addEventListener('click', function() {
+    document.getElementById('slidingNav').classList.remove('open');
+  });
+    </script>
   </body>
 </html>
