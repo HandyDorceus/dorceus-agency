@@ -62,7 +62,7 @@ nav{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url("/assets/hero.png");
+  background-image: url("/assets/hero001.png");
   background-size: cover;
 }
 
@@ -178,8 +178,8 @@ nav{
 }
 
 .placeholder-image{
-  width:30vw;
-  height:48vh;
+  width: 35vw;
+  height: auto;
 }
 
 .section:nth-child(3){
