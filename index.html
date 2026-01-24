@@ -14,9 +14,14 @@
           <div class="logo-text">Dorceus Agency</div>
         </a>
       </div>
-      <div class="">
-        <a href="/index.html" class="nav-button">Home</a>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="nav-links" id="navLinks">
         <a href="/pages/about.html" class="nav-button">About</a>
+        <a href="/pages/services.html" class="nav-button">Services</a>
         <a href="/pages/contact.html" class="nav-button">Contact</a>
       </div>
     </nav>
@@ -57,84 +62,58 @@
         </div>
       </div>
 
-      <div class="section">
-        <div class="section-text">
-          <div class="subhead">Securing Your Future with Nationwide Life Insurance Solutions</div>
-          <div class="text">
-            At Dorceus Agency, we offer superior life insurance coverage to clients across the 
-            United States. Our dedicated team of professionals caters to diverse individuals and 
-            families, providing tailored solutions to secure your future and protect your loved 
-            ones. With a commitment to personal service and ease of access, our agents ensure you 
-            find the perfect policy that meets your needs. Trust Dorceus Agency to guide you with 
-            integrity and expertise as you plan for a secure and prosperous tomorrow.
+      <section class="homepage-services">
+        <h2 class="services-heading">Our Services</h2>
+        <p class="services-subtext">Comprehensive protection solutions tailored to your family's needs</p>
+
+        <div class="services-preview-grid">
+          <div class="service-preview-card">
+            <div class="service-icon">🏛️</div>
+            <h3 class="service-preview-title">Estate Planning</h3>
+            <p class="service-preview-desc">Comprehensive strategies to preserve and transfer your wealth efficiently</p>
+          </div>
+
+          <div class="service-preview-card">
+            <div class="service-icon">🛡️</div>
+            <h3 class="service-preview-title">Life Insurance</h3>
+            <p class="service-preview-desc">From term to universal life, find the perfect coverage for your family</p>
+          </div>
+
+          <div class="service-preview-card">
+            <div class="service-icon">🏠</div>
+            <h3 class="service-preview-title">Mortgage Protection</h3>
+            <p class="service-preview-desc">Ensure your family can keep their home even if the unexpected happens</p>
+          </div>
+
+          <div class="service-preview-card">
+            <div class="service-icon">💼</div>
+            <h3 class="service-preview-title">Income Protection</h3>
+            <p class="service-preview-desc">Replace lost income due to disability or critical illness</p>
+          </div>
+
+          <div class="service-preview-card">
+            <div class="service-icon">🎓</div>
+            <h3 class="service-preview-title">College Savings</h3>
+            <p class="service-preview-desc">Tax-advantaged strategies to fund your children's education</p>
+          </div>
+
+          <div class="service-preview-card">
+            <div class="service-icon">🌟</div>
+            <h3 class="service-preview-title">Legacy Planning</h3>
+            <p class="service-preview-desc">Build a lasting impact that reflects your values for future generations</p>
           </div>
         </div>
-        <div>
-          <img
-            src="/assets/Dorceus-Agency-Icon-A1.png"
-            alt="Agency-Icon-A1"
-            class="placeholder-image"
-          />
-        </div>
-      </div>
 
-      <div class="company-section">
-        <div class="company-title">You're in good company</div>
-        <p class="description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore
-        </p>
-        <div class="logo-grid">
-          <img
-            src="/assets/placeholder.png"
-            alt="placeholder"
-            class="company-logo"
-          />
-          <img
-            src="/assets/placeholder.png"
-            alt="placeholder"
-            class="company-logo"
-          />
-          <img
-            src="/assets/placeholder.png"
-            alt="placeholder"
-            class="company-logo"
-          />
-          <img
-            src="/assets/placeholder.png"
-            alt="placeholder"
-            class="company-logo"
-          />
-          <img
-            src="/assets/placeholder.png"
-            alt="placeholder"
-            class="company-logo"
-          />
-          <img
-            src="/assets/placeholder.png"
-            alt="placeholder"
-            class="company-logo"
-          />
-          <img
-            src="/assets/placeholder.png"
-            alt="placeholder"
-            class="company-logo"
-          />
-          <img
-            src="/assets/placeholder.png"
-            alt="placeholder"
-            class="company-logo"
-          />
+        <div class="view-all-services">
+          <a href="/pages/services.html" class="view-all-button">View All Services</a>
         </div>
-      </div>
+      </section>
 
       <div class="join">
         <div class="join-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore
+          Ready to secure your financial future? Let's discuss your life insurance and estate planning needs.
         </div>
-        <div class="join-button">Join Today</div>
-        <div class="contact-button">Contact Us</div>
+        <a href="/pages/contact.html" class="contact-button">Book a Meeting</a>
       </div>
       
 
@@ -145,19 +124,21 @@
         <div class="footer-content">
           <div>
             <a class="logo" href="/index.html">
-              <img src="./assets/logo-orange.png" class="logo-img" alt="logo" />
-              <div class="logo-text orange">Dorceus Agency</div>
+              <img src="./assets/logo.png" class="logo-img footer-logo-img" alt="logo" />
+              <div class="logo-text footer-logo-text">Dorceus Agency</div>
             </a>
           </div>
         </div>
         <div class="social-icons">
-          <img src="/assets/li-icon.png" alt="Facebook">
-          <img src="/assets/fb-icon.png" alt="Twitter">
-          <!-- <img src="/assets/cicle-placeholder.png" alt="Instagram"> -->
-          <!-- <img src="/assets/cicle-placeholder.png" alt="LinkedIn"> -->
+          <a href="https://www.linkedin.com/in/marc-dorceus-89019a197/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src="/assets/linkedin-icon.svg" alt="LinkedIn">
+          </a>
+          <a href="https://www.facebook.com/marc.dorceus.73?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src="/assets/facebook-icon.svg" alt="Facebook">
+          </a>
         </div>
         <div class="footer-bottom">
-          © 2025 Dorceus Agency. All Rights reserved
+          © 2026 Dorceus Agency. All Rights Reserved
         </div>
       </div>
       
@@ -175,7 +156,8 @@
           <div class="footer-text">012 - 345 - 6789</div>
         </div>
       </div>
-      
+
     </footer>
+    <script src="/script.js"></script>
   </body>
 </html>

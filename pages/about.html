@@ -9,34 +9,57 @@
   <body>
     <nav>
       <div>
-        <!-- <img src="/assets/logo.png" class="" alt="logo" /> -->
         <a class="logo" href="/index.html">
           <img src="../assets/logo.png" class="logo-img" alt="logo" />
           <div class="logo-text">Dorceus Agency</div>
         </a>
       </div>
-      <div class="links">
-        <a href="/" class="nav-button">Home</a>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="nav-links" id="navLinks">
         <a href="about.html" class="nav-button">About</a>
+        <a href="services.html" class="nav-button">Services</a>
         <a href="contact.html" class="nav-button">Contact</a>
       </div>
     </nav>
-    <main class="main">
-      <div class="mission-content">
-        <div class="hero-subhead">About Us</div>
 
-        <div class="mission-header">Our Mission</div>
-        <div class="info">
-          At Dorceus Agency, we are committed to being your trusted financial 
-          partner for life. Our mission is to provide comprehensive insurance 
-          solutions and expert financial guidance tailored to meet the unique 
-          needs of families and individuals. We dedicate ourselves to helping 
-          you secure a prosperous future through personalized life insurance 
-          options, meticulous estate planning, and reliable financial advice. 
-          Whether safeguarding your family's wellbeing or planning for your 
-          financial legacy, Dorceus Agency stands beside you every step of 
-          the way, ensuring you can move forward with confidence and peace 
+    <section class="about-hero">
+      <div class="container">
+        <h1>About Dorceus Agency</h1>
+        <p class="subtext">Your trusted partner in financial security and estate planning</p>
+      </div>
+    </section>
+
+    <main class="main">
+      <div class="content-wrapper">
+        <h2>Our Mission</h2>
+        <div class="text-content">
+          At Dorceus Agency, we are committed to being your trusted financial
+          partner for life. Our mission is to provide comprehensive insurance
+          solutions and expert financial guidance tailored to meet the unique
+          needs of families and individuals. We dedicate ourselves to helping
+          you secure a prosperous future through personalized life insurance
+          options, meticulous estate planning, and reliable financial advice.
+          Whether safeguarding your family's wellbeing or planning for your
+          financial legacy, Dorceus Agency stands beside you every step of
+          the way, ensuring you can move forward with confidence and peace
           of mind.
+        </div>
+      </div>
+
+      <div class="content-wrapper">
+        <h2>Our Expertise</h2>
+        <div class="text-content">
+          As a proud partner of <strong>Nationwide</strong>, we bring the strength and
+          stability of one of America's most trusted insurance providers to every client
+          relationship. We serve families and individuals ages 18-80 across the United States,
+          educating clients on how to leverage life insurance as a powerful financial tool—not
+          just a death benefit. Our approach combines deep industry knowledge with personalized
+          service, ensuring you understand your options and make informed decisions that align
+          with your long-term goals.
         </div>
       </div>
     </main>
@@ -45,19 +68,21 @@
         <div class="footer-content">
           <div>
             <a class="logo" href="/index.html">
-              <img src="/assets/logo-orange.png" class="logo-img" alt="logo" />
-              <div class="logo-text orange">Dorceus Agency</div>
+              <img src="/assets/logo.png" class="logo-img footer-logo-img" alt="logo" />
+              <div class="logo-text footer-logo-text">Dorceus Agency</div>
             </a>
           </div>
         </div>
         <div class="social-icons">
-          <img src="/assets/cicle-placeholder.png" alt="Facebook" />
-          <img src="/assets/cicle-placeholder.png" alt="Twitter" />
-          <img src="/assets/cicle-placeholder.png" alt="Instagram" />
-          <img src="/assets/cicle-placeholder.png" alt="LinkedIn" />
+          <a href="https://www.linkedin.com/in/marc-dorceus-89019a197/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src="/assets/linkedin-icon.svg" alt="LinkedIn">
+          </a>
+          <a href="https://www.facebook.com/marc.dorceus.73?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src="/assets/facebook-icon.svg" alt="Facebook">
+          </a>
         </div>
         <div class="footer-bottom">
-          © 2023 Dorceus Agency. All Rights reserved
+          © 2026 Dorceus Agency. All Rights Reserved
         </div>
       </div>
 
@@ -71,10 +96,11 @@
         </div>
         <div>
           <div class="footer-head">Contact</div>
-          <div class="footer-text">dorceus.agencies@email.com</div>
+          <div class="footer-text">dorceus.agencies@gmail.com</div>
           <div class="footer-text">012 - 345 - 6789</div>
         </div>
       </div>
     </footer>
+    <script src="/script.js"></script>
   </body>
 </html>

@@ -9,21 +9,32 @@
   <body>
     <nav>
       <div>
-        <!-- <img src="/assets/logo.png" class="" alt="logo" /> -->
         <a class="logo" href="/index.html">
           <img src="../assets/logo.png" class="logo-img" alt="logo" />
           <div class="logo-text">Dorceus Agency</div>
         </a>
       </div>
-      <div class="links">
-        <a href="/" class="nav-button">Home</a>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="nav-links" id="navLinks">
         <a href="about.html" class="nav-button">About</a>
+        <a href="services.html" class="nav-button">Services</a>
         <a href="contact.html" class="nav-button">Contact</a>
       </div>
     </nav>
+
+    <section class="contact-hero">
+      <div class="container">
+        <h1>Get in Touch</h1>
+        <p class="subtext">Ready to secure your financial future? Reach out to schedule a complimentary consultation.</p>
+      </div>
+    </section>
+
     <main class="main">
       <div class="main-content">
-        <div class="hero-subhead">Contact Us</div>
         <div class="row">
           <div class="contact">Phone</div>
           <div class="line"></div>
@@ -32,7 +43,7 @@
         <div class="row">
           <div class="contact">Email</div>
           <div class="line"></div>
-          <div class="info">dorceus.agencies@email.com</div>
+          <div class="info">dorceus.agencies@gmail.com</div>
         </div>
         <div class="row">
           <div class="contact">Address</div>
@@ -50,19 +61,21 @@
         <div class="footer-content">
           <div>
             <a class="logo" href="/index.html">
-              <img src="/assets/logo-orange.png" class="logo-img" alt="logo" />
-              <div class="logo-text orange">Dorceus Agency</div>
+              <img src="/assets/logo.png" class="logo-img footer-logo-img" alt="logo" />
+              <div class="logo-text footer-logo-text">Dorceus Agency</div>
             </a>
           </div>
         </div>
         <div class="social-icons">
-          <img src="/assets/cicle-placeholder.png" alt="Facebook" />
-          <img src="/assets/cicle-placeholder.png" alt="Twitter" />
-          <img src="/assets/cicle-placeholder.png" alt="Instagram" />
-          <img src="/assets/cicle-placeholder.png" alt="LinkedIn" />
+          <a href="https://www.linkedin.com/in/marc-dorceus-89019a197/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src="/assets/linkedin-icon.svg" alt="LinkedIn">
+          </a>
+          <a href="https://www.facebook.com/marc.dorceus.73?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src="/assets/facebook-icon.svg" alt="Facebook">
+          </a>
         </div>
         <div class="footer-bottom">
-          © 2023 Dorceus Agency. All Rights reserved
+          © 2026 Dorceus Agency. All Rights Reserved
         </div>
       </div>
 
@@ -81,5 +94,6 @@
         </div>
       </div>
     </footer>
+    <script src="/script.js"></script>
   </body>
 </html>
