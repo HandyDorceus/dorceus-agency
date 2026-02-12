@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.combinedinsurance.com)",
+      "Bash(node server.js:*)",
+      "Bash(curl:*)",
+      "Bash(powershell -Command \"\\(Invoke-WebRequest -Uri http://localhost:4000/ -UseBasicParsing\\).StatusCode\")",
+      "Bash(powershell -Command \"\\(Invoke-WebRequest -Uri http://localhost:4000/ -UseBasicParsing\\).Content.Substring\\(0, 500\\)\")",
+      "Bash(powershell -Command \"$c = \\(Invoke-WebRequest -Uri http://localhost:4000/ -UseBasicParsing\\).Content; Write-Host \\(''agent-hero: '' + $c.Contains\\(''agent-hero''\\)\\); Write-Host \\(''contact-card-section: '' + $c.Contains\\(''contact-card-section''\\)\\); Write-Host \\(''services-overview: '' + $c.Contains\\(''services-overview''\\)\\); Write-Host \\(''quote-form-section: '' + $c.Contains\\(''quote-form-section''\\)\\)\")",
+      "Bash(powershell -Command:*)",
+      "Bash(powershell -File - <<'PS1'\n$c = \\(Invoke-WebRequest -Uri http://localhost:4000/ -UseBasicParsing\\).Content\nWrite-Host \"agent-hero: $\\($c.Contains\\('agent-hero'\\)\\)\"\nWrite-Host \"contact-card-section: $\\($c.Contains\\('contact-card-section'\\)\\)\"\nWrite-Host \"services-overview: $\\($c.Contains\\('services-overview'\\)\\)\"\nWrite-Host \"quote-form-section: $\\($c.Contains\\('quote-form-section'\\)\\)\"\nPS1)",
+      "Bash(powershell -File -:*)"
+    ]
+  }
+}

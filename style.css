@@ -1089,6 +1089,447 @@ grid-row-gap: 4vh;
   transform: translateY(-2px);
 }
 
+/* ===================== */
+/* AGENT HERO SECTION    */
+/* ===================== */
+.agent-hero {
+  width: 100%;
+  position: relative;
+  background-image: url("/assets/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+}
+
+.agent-hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(135deg, rgba(10, 30, 43, 0.88) 0%, rgba(26, 58, 74, 0.78) 100%);
+  z-index: 1;
+}
+
+.agent-hero-inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 80px;
+  gap: 60px;
+}
+
+.agent-hero-text {
+  flex: 0 1 60%;
+}
+
+.agent-hero-text h1 {
+  color: var(--color-text-white);
+  font-family: var(--font-serif);
+  font-size: 64px;
+  margin-bottom: 8px;
+}
+
+.agent-hero-subtitle {
+  color: var(--color-accent-gold);
+  font-family: var(--font-serif);
+  font-size: var(--font-sm);
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+
+.agent-hero-intro {
+  color: var(--color-text-light);
+  font-size: 18px;
+  line-height: 1.75;
+  margin-bottom: 40px;
+  max-width: 560px;
+}
+
+.agent-hero-cta {
+  display: inline-block;
+  background-color: var(--color-accent-gold);
+  color: var(--color-primary-dark);
+  font-weight: 700;
+  font-size: 16px;
+  padding: 16px 48px;
+  border-radius: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border: 2px solid var(--color-accent-gold);
+}
+
+.agent-hero-cta:hover {
+  background-color: transparent;
+  color: var(--color-accent-gold);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+}
+
+.agent-hero-headshot {
+  flex: 0 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.agent-hero-headshot img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--color-accent-gold);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* ========================= */
+/* CONTACT CARD SECTION      */
+/* ========================= */
+.contact-card-section {
+  background-color: var(--color-bg-offwhite);
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.contact-card-heading {
+  font-family: var(--font-serif);
+  font-size: var(--font-xl);
+  color: var(--color-text-dark);
+  margin-bottom: 48px;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-card-link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--color-bg-light);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 32px 40px;
+  text-decoration: none;
+  color: var(--color-text-dark);
+  flex: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-card-link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-color: var(--color-accent-gold);
+}
+
+.contact-card-icon {
+  color: var(--color-accent-gold);
+  flex-shrink: 0;
+}
+
+.contact-card-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contact-card-label {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--color-text-muted);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.contact-card-value {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-text-dark);
+}
+
+/* ============================ */
+/* SERVICES OVERVIEW SECTION    */
+/* ============================ */
+.services-overview {
+  padding: 100px 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.services-overview-heading {
+  font-family: var(--font-serif);
+  font-size: var(--font-xl);
+  color: var(--color-text-dark);
+  text-align: center;
+  margin-bottom: 56px;
+  letter-spacing: -0.5px;
+}
+
+.services-overview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.services-overview-card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 320px;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  background-image: url("/assets/hero.png");
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-overview-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.services-overview-card-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to top, rgba(10, 30, 43, 0.92) 0%, rgba(10, 30, 43, 0.4) 100%);
+  z-index: 1;
+}
+
+.services-overview-card-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 40px 32px;
+}
+
+.services-overview-card-content h3 {
+  color: var(--color-text-white);
+  font-family: var(--font-serif);
+  font-size: var(--font-base);
+  margin-bottom: 20px;
+}
+
+.services-overview-pill {
+  display: inline-block;
+  color: var(--color-primary-dark);
+  background-color: var(--color-accent-gold);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 32px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+
+.services-overview-card:hover .services-overview-pill {
+  background-color: #e6c34a;
+}
+
+/* ========================= */
+/* QUOTE FORM SECTION        */
+/* ========================= */
+.quote-form-section {
+  background: linear-gradient(135deg, var(--color-primary-navy) 0%, var(--color-accent-teal) 100%);
+  padding: 100px 24px;
+}
+
+.quote-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quote-form-heading {
+  font-family: var(--font-serif);
+  font-size: var(--font-xl);
+  color: var(--color-text-white);
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.quote-form-subheading {
+  color: var(--color-text-light);
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.quote-form-message {
+  display: none;
+  padding: 16px 24px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.quote-form-message.success {
+  display: block;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.quote-form-message.error {
+  display: block;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.quote-form-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+
+.quote-form-fieldset legend {
+  color: var(--color-text-white);
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.quote-form-radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.quote-form-radio-group label {
+  color: var(--color-text-light);
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.quote-form-radio-group input[type="radio"] {
+  accent-color: var(--color-accent-gold);
+  width: 18px;
+  height: 18px;
+}
+
+.quote-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.quote-form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-form-field label {
+  color: var(--color-text-white);
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+}
+
+.quote-form-field label .required {
+  color: var(--color-accent-gold);
+}
+
+.quote-form-field input,
+.quote-form-field select,
+.quote-form-field textarea {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-text-white);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quote-form-field input::placeholder,
+.quote-form-field textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.quote-form-field input:focus,
+.quote-form-field select:focus,
+.quote-form-field textarea:focus {
+  outline: none;
+  border-color: var(--color-accent-gold);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+}
+
+.quote-form-field input.error,
+.quote-form-field select.error,
+.quote-form-field textarea.error {
+  border-color: #e74c3c;
+  box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.2);
+}
+
+.quote-form-field select option {
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-white);
+}
+
+.quote-form-field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.quote-form-field-full {
+  margin-bottom: 24px;
+}
+
+.quote-form-submit {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--color-accent-gold);
+  color: var(--color-primary-dark);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quote-form-submit:hover {
+  background-color: #e6c34a;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+}
+
+.quote-form-disclaimer {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
 /* RESPONSIVE DESIGN - MOBILE FIRST */
 
 /* Tablet Styles (768px - 1023px) */
@@ -1359,6 +1800,44 @@ grid-row-gap: 4vh;
   .info {
     font-size: 22px;
     line-height: 48px;
+  }
+
+  /* Agent Hero - Tablet */
+  .agent-hero-inner {
+    padding: 80px 40px;
+    gap: 40px;
+  }
+
+  .agent-hero-text h1 {
+    font-size: 48px;
+  }
+
+  .agent-hero-headshot img {
+    width: 240px;
+    height: 240px;
+  }
+
+  /* Contact Card - Tablet */
+  .contact-card-heading {
+    font-size: var(--font-lg);
+  }
+
+  /* Services Overview - Tablet */
+  .services-overview {
+    padding: 80px 40px;
+  }
+
+  .services-overview-heading {
+    font-size: var(--font-lg);
+  }
+
+  /* Quote Form - Tablet */
+  .quote-form-section {
+    padding: 80px 24px;
+  }
+
+  .quote-form-heading {
+    font-size: var(--font-lg);
   }
 }
 
@@ -1810,6 +2289,102 @@ grid-row-gap: 4vh;
     line-height: 1.7;
     width: 100%;
   }
+
+  /* Agent Hero - Mobile */
+  .agent-hero {
+    background-attachment: scroll;
+  }
+
+  .agent-hero-inner {
+    flex-direction: column-reverse;
+    padding: 60px 24px;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .agent-hero-text {
+    flex: 1 1 100%;
+  }
+
+  .agent-hero-text h1 {
+    font-size: 36px;
+  }
+
+  .agent-hero-intro {
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .agent-hero-headshot {
+    flex: 1 1 100%;
+  }
+
+  .agent-hero-headshot img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .agent-hero-cta {
+    font-size: 14px;
+    padding: 14px 36px;
+  }
+
+  /* Contact Card - Mobile */
+  .contact-card-section {
+    padding: 60px 24px;
+  }
+
+  .contact-card-heading {
+    font-size: var(--font-md);
+    margin-bottom: 32px;
+  }
+
+  .contact-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-card-link {
+    padding: 24px;
+  }
+
+  /* Services Overview - Mobile */
+  .services-overview {
+    padding: 60px 24px;
+  }
+
+  .services-overview-heading {
+    font-size: var(--font-md);
+    margin-bottom: 32px;
+  }
+
+  .services-overview-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .services-overview-card {
+    min-height: 240px;
+  }
+
+  /* Quote Form - Mobile */
+  .quote-form-section {
+    padding: 60px 20px;
+  }
+
+  .quote-form-heading {
+    font-size: var(--font-md);
+  }
+
+  .quote-form-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .quote-form-radio-group {
+    gap: 16px;
+  }
 }
 
 /* Extra Small Mobile (320px - 480px) */
@@ -1907,6 +2482,64 @@ grid-row-gap: 4vh;
 
   .placeholder-image {
     height: 250px;
+  }
+
+  /* Agent Hero - XS */
+  .agent-hero-text h1 {
+    font-size: 30px;
+  }
+
+  .agent-hero-subtitle {
+    font-size: 16px;
+  }
+
+  .agent-hero-intro {
+    font-size: 14px;
+  }
+
+  .agent-hero-headshot img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .agent-hero-cta {
+    font-size: 12px;
+    padding: 12px 28px;
+  }
+
+  /* Contact Card - XS */
+  .contact-card-value {
+    font-size: 15px;
+  }
+
+  /* Services Overview - XS */
+  .services-overview-heading {
+    font-size: var(--font-base);
+  }
+
+  .services-overview-card {
+    min-height: 200px;
+  }
+
+  /* Quote Form - XS */
+  .quote-form-heading {
+    font-size: var(--font-base);
+  }
+
+  .quote-form-subheading {
+    font-size: 15px;
+  }
+
+  .quote-form-field input,
+  .quote-form-field select,
+  .quote-form-field textarea {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  .quote-form-submit {
+    font-size: 14px;
+    padding: 16px;
   }
 }
 
